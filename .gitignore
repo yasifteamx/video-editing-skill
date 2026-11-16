@@ -1,0 +1,42 @@
+# Secrets — never commit these
+.env
+*.env
+*.key
+*.pem
+credentials*.json
+*secret*
+id_rsa*
+.aws/
+.gnupg/
+
+# Media — skills and scripts only, no renders
+# (Vendored brand/icon PNGs under skills/ffmpeg-skill/ are kept on purpose,
+# and the 5 curated CC0 SFX wavs under skills/effects-kit/sfx/ are kept too.)
+*.mp4
+*.mov
+*.mkv
+*.mp3
+*.flac
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.png
+*.wav
+!skills/ffmpeg-skill/assets/*.png
+!skills/ffmpeg-skill/brand/*.png
+!skills/ffmpeg-skill/site/brand/*.png
+!skills/effects-kit/sfx/*.wav
+
+# Build / runtime junk
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+jobs/
+renders/
+exports/
+backups/
